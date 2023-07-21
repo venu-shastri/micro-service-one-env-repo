@@ -4,6 +4,7 @@ metadata:
   name: micro-service-one-deployment
   namespace: default
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: micro-service-one
