@@ -8,6 +8,6 @@ spec:
   ports:
     - targetPort: 3000
       port: 80
-      nodePort: 30008
+      nodePort: 30009
   selector:
     app: micro-service-one
