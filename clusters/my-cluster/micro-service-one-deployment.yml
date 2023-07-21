@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: micro-service-one-deployment
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: micro-service-one
+  template:
+    metadata:
+      labels:
+        app: micro-service-one
+    spec:
+      containers:
+        - name: micro-service-one-image
+          image: venuopalshastri/microserviceone:latest
+          ports:
+            - containerPort: 3000
+     
